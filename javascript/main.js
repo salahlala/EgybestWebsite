@@ -16,6 +16,8 @@ closeBtn.addEventListener("click", () => {
 
 if (window.screen.width >= 767) {
   leftSection.setAttribute("data-aos", "zoom-in");
+}else {
+	leftSection.setAttribute("data-aos" , "none");
 }
 
 burger_menu.addEventListener("click", () => {
