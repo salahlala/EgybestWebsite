@@ -414,6 +414,7 @@ a {
   position: absolute;
   top: 50%;
   width:100%;
+  user-select: none;
 }
 .container .middle .iconswitch i {
   position: absolute;
