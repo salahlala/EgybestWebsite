@@ -4,6 +4,7 @@ let text = document.querySelectorAll("ul li a");
 let leftSection = document.querySelector(".container .left");
 let burger_menu = document.querySelector(".container .burger-menu");
 let openText = document.querySelector(".container .left .openText");
+
 closeBtn.addEventListener("click", () => {
   text.forEach((e) => {
     e.classList.remove("show");
@@ -13,18 +14,6 @@ closeBtn.addEventListener("click", () => {
   list.classList.remove("convert");
   mainBody.classList.remove("hidden");
 });
-
-if (window.screen.width >= 767) {
-  leftSection.setAttribute("data-aos", "zoom-in");
-}
-if (window.screen.width < 760) {
-  if (leftSection.hasAttribute("data-aos")) {
-    leftSection.removeAttribute("data-aos");
-  }
-}
-
-
-
 
 burger_menu.addEventListener("click", () => {
   text.forEach((e) => {
